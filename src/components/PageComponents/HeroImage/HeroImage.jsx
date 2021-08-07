@@ -10,7 +10,7 @@ const HeroImage = () => {
     gsap.fromTo(image, 1, { autoAlpha: 0, y: 15 }, { autoAlpha: 1, y: 0 });
     setTimeout(() => {
       setVisable(true)
-    }, 250);
+    }, 500);
   }, []);
   return (
     <HeroImageContainer ref={(element) => {

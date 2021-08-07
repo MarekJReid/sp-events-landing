@@ -1,6 +1,6 @@
 import styled from "styled-components";
 const HeroImageContainer = styled.div`
-  visibility: ${(props) => (props.visable ? "visable" : "hidden")};
+  visibility: hidden;
   margin-bottom: 3.25rem;
   width: 100%;
   @media (min-width: 451px) {

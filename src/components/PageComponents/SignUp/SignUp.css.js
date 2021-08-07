@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const SignUpContainer = styled.div`
-visibility: ${props => props.visable ? 'visable' : 'hidden'};
+visibility: hidden;
   display: flex;
   width: 100%;
   justify-content: space-between;
