@@ -5,14 +5,19 @@ import { HeroImageContainer, DesktopHeroImage, MobileHeroImage } from "./HeroIma
 
 const HeroImage = () => {
   let image = useRef(null)
+  const [visable, setVisable] = useState(false)
   useEffect(() => {
     gsap.fromTo(image, 1, { autoAlpha: 0, y: 15 }, { autoAlpha: 1, y: 0 });
-   
+    setTimeout(() => {
+      setVisable(true)
+    }, 250);
   }, []);
   return (
     <HeroImageContainer ref={(element) => {
       image = element;
-    }}>
+    }}
+    visable={visable}
+    >
       <DesktopHeroImage>
       <StaticImage 
         aspectRatio= "1.65"

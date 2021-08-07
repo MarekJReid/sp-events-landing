@@ -21,9 +21,7 @@ const IndexPage = () => {
   
 
   useEffect(() => {
-    //image
-
-    gsap.fromTo(left, .5, { autoAlpha: 0, x: -15 }, { autoAlpha: 1, x: 0, delay: 1.25 });
+    gsap.fromTo(left, .6, { autoAlpha: 0, x: -15 }, { autoAlpha: 1, x: 0, delay: 1.25 });
     setTimeout(() => {
       setVisable(true)
     }, 500);
