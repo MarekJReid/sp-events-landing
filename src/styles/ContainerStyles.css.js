@@ -122,4 +122,53 @@ const Container = styled.div`
   }
 `
 
-export { Container, SectionWrapper }
+const PageContainer = styled.div`
+width: 100vw;
+height: 100vh;
+
+padding: 0 4rem 3.75rem 4rem;
+overflow: hidden;
+display: flex;
+
+@media (max-width: 450px) {
+  flex-direction: column;
+  padding: 0;
+}
+`
+
+const LeftContainer = styled.div`
+visibility: ${props => props.visable ? 'visable' : 'hidden'};
+width: 33%;
+height: 100%;
+display: flex;
+flex-direction: column;
+padding-top: 3.75rem;
+@media (max-width: 450px) {
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+  order: 1;
+  padding-top: 0;
+  height: 1;
+}
+`
+
+const RightContainer = styled.div`
+width: 77%;
+height: 100%;
+@media (max-width: 450px) {
+  width: 100%;
+ 
+}
+`
+const MobileHeroContainer = styled.div`
+display: none;
+@media (max-width: 450) {
+  display: block;
+}
+`
+
+
+
+export { Container, SectionWrapper, PageContainer, LeftContainer, RightContainer, MobileHeroContainer }

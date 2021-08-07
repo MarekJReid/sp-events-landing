@@ -11,6 +11,9 @@ const GlobalStyles = createGlobalStyle`
     font-size: 16px;
     font-family: 'CentraNo2', sans-serif;
   }
+  a {
+    color: #333333;
+  }
 `
 
 export default GlobalStyles

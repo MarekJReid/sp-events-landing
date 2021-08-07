@@ -17,7 +17,7 @@ const Typography = createGlobalStyle`
   }
 `
 
-const H1 = styled.h1`
+const Heading1 = styled.h1`
   font-weight: 600;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -33,7 +33,7 @@ const BC1 = styled.p`
   font-size: 1rem;
   line-height: 1.25rem;
 
-  @media (min-width: 600px) {
+  @media (min-width: 451px) {
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 1.5rem;
@@ -82,4 +82,4 @@ ${buttonAndlabel};
 `
 
 
-export { Typography, H1, BC1, FFL, FFD, Button}
+export { Typography, Heading1, BC1, FFL, FFD, Button}
