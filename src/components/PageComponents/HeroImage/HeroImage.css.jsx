@@ -1,6 +1,6 @@
 import styled from "styled-components";
 const HeroImageContainer = styled.div`
-  visibility: hidden;
+ 
   margin-bottom: 3.25rem;
   width: 100%;
   @media (min-width: 451px) {
@@ -10,12 +10,14 @@ const HeroImageContainer = styled.div`
 `;
 
 const DesktopHeroImage = styled.div`
+ visibility: hidden;
   @media (max-width: 451px) {
     display: none;
   }
 `;
 
 const MobileHeroImage = styled.div`
+ visibility: hidden;
   @media (min-width: 451px) {
     display: none;
   }

@@ -5,35 +5,44 @@ import { HeroImageContainer, DesktopHeroImage, MobileHeroImage } from "./HeroIma
 
 const HeroImage = () => {
   let image = useRef(null)
+  let imageMobile = useRef(null)
   const [visable, setVisable] = useState(false)
   useEffect(() => {
-    gsap.fromTo(image, 1, { autoAlpha: 0, y: 15 }, { autoAlpha: 1, y: 0 });
+    gsap.fromTo([image, imageMobile], 1, { autoAlpha: 0, y: 15 }, { autoAlpha: 1, y: 0 });
     setTimeout(() => {
       setVisable(true)
     }, 500);
   }, []);
   return (
-    <HeroImageContainer ref={(element) => {
-      image = element;
-    }}
-    visable={visable}
+    <HeroImageContainer 
     >
-      <DesktopHeroImage>
+      <DesktopHeroImage
+       ref={(element) => {
+        image = element;
+      }}
+      visable={visable}
+      >
       <StaticImage 
         aspectRatio= "1.65"
       placeholder="blurred"
         src="../../../assets/images/landing.jpg"
         alt="Chancery Lane"
+       
       />
       </DesktopHeroImage>
  
-       <MobileHeroImage>
+       <MobileHeroImage
+       ref={(element) => {
+        imageMobile = element;
+      }}
+      visable={visable}
+       >
        <StaticImage 
        
        placeholder="blurred"
         src="../../../assets/images/landing.jpg"
         alt="Chancery Lane"
-      />
+       />
        </MobileHeroImage>
 
     </HeroImageContainer>
