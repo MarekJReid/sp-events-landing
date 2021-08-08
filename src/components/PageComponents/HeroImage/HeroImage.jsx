@@ -8,7 +8,9 @@ const HeroImage = () => {
   let imageMobile = useRef(null)
   const [visable, setVisable] = useState(false)
   useEffect(() => {
-    gsap.fromTo([image, imageMobile], 1, { autoAlpha: 0, y: 15 }, { autoAlpha: 1, y: 0 });
+    setTimeout(() => {
+      gsap.fromTo([image, imageMobile], 1, { autoAlpha: 0, y: 15 }, { autoAlpha: 1, y: 0 });
+    }, 0);
     setTimeout(() => {
       setVisable(true)
     }, 500);
