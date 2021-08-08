@@ -10,7 +10,7 @@ const HeroImage = () => {
   useEffect(() => {
     setTimeout(() => {
       gsap.fromTo([image, imageMobile], 1, { autoAlpha: 0, y: 15 }, { autoAlpha: 1, y: 0 });
-    }, 100);
+    }, 500);
     setTimeout(() => {
       setVisable(true)
     }, 500);
