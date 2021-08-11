@@ -42,7 +42,7 @@ const HeroImage = () => {
        <StaticImage 
        
        placeholder="blurred"
-        src="../../../assets/images/landing.jpg"
+        src="../../../assets/images/landing2.jpg"
         alt="Chancery Lane"
        />
        </MobileHeroImage>
