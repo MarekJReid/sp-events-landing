@@ -125,9 +125,9 @@ const Container = styled.div`
 const PageContainer = styled.div`
 width: 99vw;
 height: 100vh;
-padding: 0 4rem 3.75rem 4rem;
+padding: 0 4rem 3rem 4rem;
 display: flex;
-
+float: left;
 @media (max-width: 450px) {
   flex-direction: column;
   padding: 0;
@@ -136,7 +136,7 @@ display: flex;
 
 const LeftContainer = styled.div`
 visibility: ${props => props.visable ? 'visable' : 'hidden'};
-width: 34%;
+width: 34.5%;
 height: 100%;
 display: flex;
 flex-direction: column;

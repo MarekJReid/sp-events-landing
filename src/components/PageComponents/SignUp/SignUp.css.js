@@ -32,7 +32,7 @@ const SignUpForm = styled.form`
 const SignUpFormElement = styled.div`
   display: flex;
   flex-direction: column;
-  width: 62.5%;
+  width: 58.5%;
   @media (max-width: 701px) {
     width: 100%;
   }
@@ -60,7 +60,7 @@ const SignUpButton = styled.button`
   color: ${props => props.err ? 'red' : '#333333'};
   background: none;
   padding: 1rem;
-  width: 18%;
+  width: 18.5%;
   align-self: flex-end;
   height: 2rem;
   display: flex;
