@@ -4,46 +4,52 @@ import Light from '../assets/fonts/CentraNo2-Light.woff2';
 
 const Typography = createGlobalStyle`
   @font-face {
-    font-family: 'CentraNo2';
+    font-family: 'CentraNo2Book';
     src: url(${Book});
     font-style: normal;
-    font-weight: 600;
+ 
   }
   @font-face {
-    font-family: 'CentraNo2';
-    src: url(${Light});
-    font-style: normal;
-    font-weight: 400;
+    font-family: 'CentraNo2Light';
+    src: url(${Light}) ;
+    format: ("woff");
+
+  }
+  @font-face {
+    font-family: 'CentraNo2Thin';
+    src: url("//db.onlinewebfonts.com/t/67bac7131607122728c4b0b04138d514.woff") ;
+    format: ("woff");
+
   }
 `
 
 const Heading1 = styled.h1`
-  font-weight: 600;
+font-family: CentraNo2Book;
   font-size: 1.25rem;
   line-height: 1.5rem;
 
   @media (min-width: 600px) {
-    font-weight: 600;
+ 
     font-size: 1.5rem;
-    line-height: 1.75rem;
+    line-height: 1.17;
   }
 `
 const BC1 = styled.p`
-  font-weight: 400;
+font-family: CentraNo2Light;
   font-size: 1rem;
   line-height: 1.25rem;
 
   @media (min-width: 451px) {
-  font-weight: 400;
+  
   font-size: 1.25rem;
-  line-height: 1.5rem;
+  line-height: 1.2;
   }
   
 `
 const buttonAndlabel = css`
-  font-weight: 600;
+
   font-size: 0.75;
-  line-height: 1rem;
+  line-height: 1.33;
   letter-spacing: 20;
   text-transform: uppercase;
 `
@@ -51,22 +57,21 @@ const FFL = styled.label`
   ${buttonAndlabel};
 
   @media (min-width: 600px) {
-    font-weight: 600;
+  
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1;
     text-transform: uppercase;
   }
 `
 const FFD = styled.p`
-  font-weight: 400;
+  
   font-size: 0.75;
-  line-height: 1rem;
   color: hsl(0, 0%, 50%);
 
   @media (min-width: 600px) {
-    font-weight: 400;
+  
     font-size: 0.8rem;
-    line-height: 0.8rem;
+    line-height: 1;
     color: hsl(0, 0%, 50%);
   }
 `
@@ -74,7 +79,7 @@ const Button = styled.button`
 ${buttonAndlabel};
 
 @media (min-width: 600px) {
-  font-weight: 600;
+
   font-size: 0.75rem;
   line-height: 0.75rem;
   text-transform: uppercase;

@@ -36,7 +36,7 @@ const IndexPage = () => {
         visable={visable}
       >
         <ComingSoon />
-        <SocialLogos />
+        {/* <SocialLogos /> */}
         <ScottPickettLogo />
       </LeftContainer>
       <RightContainer

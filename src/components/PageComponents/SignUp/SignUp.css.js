@@ -17,6 +17,11 @@ const SignUpForm = styled.form`
   display: flex;
   width: 100%;
   justify-content: space-between;
+  @media (max-width: 700px) {
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+  }
   @media (max-width: 450px) {
     margin-bottom: 3.5rem;
     flex-direction: column;
@@ -28,7 +33,7 @@ const SignUpFormElement = styled.div`
   display: flex;
   flex-direction: column;
   width: 62.5%;
-  @media (max-width: 451px) {
+  @media (max-width: 701px) {
     width: 100%;
   }
 `;
@@ -68,8 +73,10 @@ const SignUpButton = styled.button`
     background: ${props => props.err ? 'red' : '#333333'};
  
   }
-
-  @media (max-width: 450px) {
+  @media (min-width: 700px) and (max-width: 1000px)  {
+    width: auto;
+  }
+  @media (max-width: 700px) {
     align-self: auto;
     margin-top: 1.5rem;
     width: 37%;

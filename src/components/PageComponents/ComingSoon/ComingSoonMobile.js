@@ -5,7 +5,7 @@ import { ComingSoonMobileWrapper } from './ComingSoon.css'
 const ComingSoonMobile = () => {
     return (
         <ComingSoonMobileWrapper>
-            <Heading1>Coming Soon</Heading1>
+            <Heading1>Coming soon</Heading1>
         </ComingSoonMobileWrapper>
     )
 }

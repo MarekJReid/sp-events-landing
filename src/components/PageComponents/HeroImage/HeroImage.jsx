@@ -25,9 +25,9 @@ const HeroImage = () => {
       visable={visable}
       >
       <StaticImage 
-        aspectRatio= "1.65"
+        aspectRatio= "1.5"
       placeholder="blurred"
-        src="../../../assets/images/landing.jpg"
+        src="../../../assets/images/landing2.jpg"
         alt="Chancery Lane"
        
       />

@@ -5,7 +5,7 @@ import { ComingSoonWrapper } from './ComingSoon.css'
 const ComingSoon = () => {
     return (
         <ComingSoonWrapper>
-            <Heading1>Coming Soon</Heading1>
+            <Heading1>Coming soon</Heading1>
         </ComingSoonWrapper>
     )
 }

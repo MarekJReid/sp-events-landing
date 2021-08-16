@@ -123,11 +123,9 @@ const Container = styled.div`
 `
 
 const PageContainer = styled.div`
-width: 100vw;
+width: 99vw;
 height: 100vh;
-
 padding: 0 4rem 3.75rem 4rem;
-overflow: hidden;
 display: flex;
 
 @media (max-width: 450px) {
@@ -138,14 +136,15 @@ display: flex;
 
 const LeftContainer = styled.div`
 visibility: ${props => props.visable ? 'visable' : 'hidden'};
-width: 33%;
+width: 34%;
 height: 100%;
 display: flex;
 flex-direction: column;
+justify-content: space-between;
 padding-top: 3.75rem;
 @media (max-width: 450px) {
   flex-direction: row;
-  justify-content: space-between;
+ 
   padding: 1rem;
   width: 100%;
   order: 1;
@@ -155,7 +154,7 @@ padding-top: 3.75rem;
 `
 
 const RightContainer = styled.div`
-width: 77%;
+width: 67%;
 height: 100%;
 @media (max-width: 450px) {
   width: 100%;

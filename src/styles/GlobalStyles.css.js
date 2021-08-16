@@ -14,6 +14,9 @@ const GlobalStyles = createGlobalStyle`
   a {
     color: #333333;
   }
+  h1 {
+    font-weight: normal;
+  }
 `
 
 export default GlobalStyles
