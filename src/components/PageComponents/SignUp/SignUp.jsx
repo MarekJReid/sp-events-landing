@@ -54,6 +54,7 @@ const SignUp = () => {
         method: "POST",
         headers: myHeaders,
         body: raw,
+        tags: "SP Events",
         redirect: "follow",
       };
 
