@@ -26,7 +26,7 @@ const Intro = () => {
       <ComingSoonMobile />
       <BC1>
         For general enquiries, please contact us at&nbsp;
-        <a href="loremipsum@spevents.com.au">enquiries@spevents.com.au</a>.&nbsp;
+        <a href="mailto:enquiries@spevents.com.au">enquiries@spevents.com.au</a>.&nbsp;
         Otherwise, please sign up for updates from the Scott Pickett Group and
         to be the first to know when our new site is live.
       </BC1>
