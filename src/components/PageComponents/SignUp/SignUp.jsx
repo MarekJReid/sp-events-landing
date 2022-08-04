@@ -47,6 +47,7 @@ const SignUp = () => {
       var raw = JSON.stringify({
         data: {
           email: email,
+          tags: ["SP Events Email SignUp"]
         },
       });
 
